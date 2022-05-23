@@ -1,3 +1,4 @@
+language: node_js
 sudo: required
 services:
   - docker
@@ -8,7 +9,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    - secure: $SECURE_KEY
+    secure: $SECURE_KEY
   app: "ddvalim-docker-react"
   on:
     branch: master
