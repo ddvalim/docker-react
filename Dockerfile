@@ -26,5 +26,7 @@ RUN npm run build
 # A block of instructions belongs only to a single FROM statement
 FROM nginx
 
+EXPOSE 80
+
 # Copy source code from previous build stage
 COPY --from=build /home/node/app/build /usr/share/nginx/html
