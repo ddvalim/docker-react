@@ -13,6 +13,6 @@ deploy:
   provider: heroku
   api_key:
     - secure: $SECURE_KEY
-  app: "ddvalim-docker-react"
+  app: $APP
   on:
     branch: master
