@@ -12,7 +12,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: $SECURE_KEY
+    - secure: $SECURE_KEY
   app: $APP
   on:
     branch: master
